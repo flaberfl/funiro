@@ -162,7 +162,7 @@ for (let index = 0; index < tabs.length; index++) {
 	let tabs_blocks = tab.querySelectorAll("._tabs-block");
 	for (let index = 0; index < tabs_items.length; index++) {
 		let tabs_item = tabs_items[index];
-		tabs_item.addEventListener("mouseover", function (e) {  // Изменить на клик, если нужно
+		tabs_item.addEventListener("mouseover", function (e) { // Изменить на клик, если нужно
 			for (let index = 0; index < tabs_items.length; index++) {
 				let tabs_item = tabs_items[index];
 				tabs_item.classList.remove('_active');
@@ -283,3 +283,11 @@ function _is_hidden(el) {
 }
 
 //=================
+
+//RemoveClasses
+function _removeClasses(el, class_name) {
+	for (var i = 0; i < el.length; i++) {
+		el[i].classList.remove(class_name);
+	}
+}
+//========================================

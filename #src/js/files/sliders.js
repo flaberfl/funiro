@@ -61,52 +61,52 @@ if (sliderScrollItems.length > 0) {
 
 function sliders_bild_callback(params) {}
 
-let slider = new Swiper('.portfolio__items', {
+// let slider = new Swiper('.portfolio__items', {
 
-	speed: 800,
+// 	speed: 800,
 
 
-	// Dotts
-	pagination: {
-		el: '.portfolio__container .swiper-pagination',
-		clickable: true,
-	},
-	// Arrows
-	navigation: {
-		nextEl: '.portfolio__container .swiper-button-next',
-		prevEl: '.portfolio__container .swiper-button-prev'
-	},
+// 	// Dotts
+// 	pagination: {
+// 		el: '.portfolio__container .swiper-pagination',
+// 		clickable: true,
+// 	},
+// 	// Arrows
+// 	navigation: {
+// 		nextEl: '.portfolio__container .swiper-button-next',
+// 		prevEl: '.portfolio__container .swiper-button-prev'
+// 	},
 
-	breakpoints: { // настройки для разных разрешений
+// 	breakpoints: { // настройки для разных разрешений
 
-		479: {
-			slidesPerView: 2,
-			spaceBetween: 5
-		},
-		767: {
-			slidesPerView: 3,
-			spaceBetween: 10
-		},
-		991: {
-			slidesPerView: 4,
-			spaceBetween: 20
-		}
-	}
-});
+// 		479: {
+// 			slidesPerView: 2,
+// 			spaceBetween: 5
+// 		},
+// 		767: {
+// 			slidesPerView: 3,
+// 			spaceBetween: 10
+// 		},
+// 		991: {
+// 			slidesPerView: 4,
+// 			spaceBetween: 20
+// 		}
+// 	}
+// });
 
-let slider2 = new Swiper('.reviews__items', {
+// let slider2 = new Swiper('.reviews__items', {
 
-	slidesPerView: 1,
-	speed: 800,
-	// spaceBetween: 20,
+// 	slidesPerView: 1,
+// 	speed: 800,
+// 	// spaceBetween: 20,
 
-	pagination: {
-		el: '.reviews__container .swiper-pagination',
-		clickable: true,
-	},
+// 	pagination: {
+// 		el: '.reviews__container .swiper-pagination',
+// 		clickable: true,
+// 	},
 
-	navigation: {
-		nextEl: '.reviews__container .swiper-button-next',
-		prevEl: '.reviews__container .swiper-button-prev'
-	},
-});
+// 	navigation: {
+// 		nextEl: '.reviews__container .swiper-button-next',
+// 		prevEl: '.reviews__container .swiper-button-prev'
+// 	},
+// });

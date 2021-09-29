@@ -1,33 +1,15 @@
-//================
-// Button UP
+window.onload = function () {
+  document.addEventListener("click", documentActions);
 
-window.onscroll = function () {
-  let fixedUp = document.getElementById('upbutton');
-  if (window.pageYOffset > 600) {
-    fixedUp.classList.add('_fixed');
-  } else {
-    fixedUp.classList.remove('_fixed');
+  function documentActions(e) {
+    const targetElement = e.target;
+    if (window.innerWidth > 768 && isMobile.any()) {
+      if (targetElement.classList.contains('menu__arrow')) {
+        targetElement.closest('.menu__item').classList.toggle('_hover');
+      }
+      if (!targetElement.closest('.menu__item') && document.querySelectorAll('.menu__item._hover').length > 0) {
+        _removeClasses(document.querySelectorAll('.menu__item._hover'), "_hover");
+      }
+    }
   }
-};
-
-//================
-
-// Header
-
-const headerElement = document.querySelector('.header__top'); // Следим за этим блоком
-const menuFixed = document.querySelector('.header__menu'); // К этому блоку применяем _fixed
-// А чтобы остальной контент резко не прыгал вверх - мы в стилях прописываем .header {position: absolute;}
-
-const callback = function (enteries, observer) {
-  if (enteries[0].isIntersecting) {
-    menuFixed.classList.remove('_fixed');
-  } else {
-    menuFixed.classList.add('_fixed');
-  }
-};
-
-const headerObserver = new IntersectionObserver(callback);
-headerObserver.observe(headerElement);
-
-
-//===============
+}
