@@ -127,6 +127,8 @@
   &__arrow {
     margin: 0px 0px 0px 8px;
 
+    background-color: #fff;
+
     font-size: 8px;
     transition: all 0.3s ease 0s;
   }
@@ -170,7 +172,9 @@
   max-width: 473px;
 
   // .search-form__icon
-  &__icon {}
+  &__icon {
+    display: none;
+  }
 
   // .search-form__item
   &__item {
@@ -184,13 +188,19 @@
   &__btn {
     flex: 0 0 45px;
     height: 45px;
+    background-color: #fff;
 
     font-size: 14px;
     color: #333333;
   }
 
   // .search-form__input
-  &__input {}
+  &__input {
+    width: 100%;
+
+    font-size: 14px;
+    color: $darkGrayColor;
+  }
 }
 
 .actions-header {
@@ -206,7 +216,9 @@
 }
 
 .cart-header {
-
+  position: relative;
+  z-index: 5;
+  display: grid;
   // .cart-header__icon
   &__icon {}
 
