@@ -51,6 +51,7 @@ body {
   overflow: hidden;
   display: flex;
   flex-direction: column;
+  color: $mainColor;
 
   &._loaded {}
 }
